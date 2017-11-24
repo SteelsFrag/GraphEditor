@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 1112
+  Left = 1191
   Height = 573
-  Top = 244
+  Top = 185
   Width = 736
   Align = alClient
   Caption = 'GraphEditor v3.0'
@@ -18,7 +18,7 @@ object MainForm: TMainForm
     ClientWidth = 176
     TabOrder = 0
     object PolyLineBut: TSpeedButton
-      Tag = 1
+      Tag = 2
       Left = 64
       Height = 50
       Top = 8
@@ -280,9 +280,10 @@ object MainForm: TMainForm
         0000000000000000000000000000000000000000000000000000000000000000
         000000000000000000000000000000000000000000000000000000000000
       }
+      OnClick = SpeedButtonClick
     end
     object RectBut: TSpeedButton
-      Tag = 3
+      Tag = 4
       Left = 8
       Height = 50
       Top = 64
@@ -544,9 +545,10 @@ object MainForm: TMainForm
         0000000000000000000000000000000000000000000000000000000000000000
         000000000000000000000000000000000000000000000000000000000000
       }
+      OnClick = SpeedButtonClick
     end
     object EllipseBut: TSpeedButton
-      Tag = 4
+      Tag = 5
       Left = 64
       Height = 50
       Top = 64
@@ -808,8 +810,10 @@ object MainForm: TMainForm
         0000000000000000000000000000000000000000000000000000000000000000
         000000000000000000000000000000000000000000000000000000000000
       }
+      OnClick = SpeedButtonClick
     end
     object LineBut: TSpeedButton
+      Tag = 1
       Left = 8
       Height = 50
       Top = 8
@@ -1071,6 +1075,7 @@ object MainForm: TMainForm
         0000000000000000000000000000000000000000000000000000000000000000
         000000000000000000000000000000000000000000000000000000000000
       }
+      OnClick = SpeedButtonClick
     end
     object SpeedButton5: TSpeedButton
       Left = 8
@@ -1085,11 +1090,12 @@ object MainForm: TMainForm
       Width = 50
     end
     object SpeedButton7: TSpeedButton
-      Tag = 2
+      Tag = 3
       Left = 120
       Height = 50
       Top = 8
       Width = 50
+      Enabled = False
       Glyph.Data = {
         DA1F0000424DDA1F00000000000036000000280000002D0000002D0000000100
         200000000000A41F000064000000640000000000000000000000000000000000
@@ -1347,6 +1353,7 @@ object MainForm: TMainForm
         0000000000000000000000000000000000000000000000000000000000000000
         000000000000000000000000000000000000000000000000000000000000
       }
+      OnClick = SpeedButtonClick
     end
     object SpeedButton8: TSpeedButton
       Left = 120
@@ -1376,7 +1383,6 @@ object MainForm: TMainForm
     Width = 560
     Align = alCustom
     Anchors = [akTop, akLeft, akRight, akBottom]
-    Color = clWhite
     ParentColor = False
     OnMouseDown = PBMouseDown
     OnMouseMove = PBMouseMove
